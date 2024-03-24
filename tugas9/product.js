@@ -1,4 +1,4 @@
- // Variabel global untuk menyimpan id
+  // Variabel global untuk menyimpan id
 let id = null;
 
 // Fungsi untuk mengedit data
@@ -35,6 +35,7 @@ const deleteData = async (index) => {
 
 
 // Fungsi untuk membuat elemen input
+// Fungsi untuk membuat elemen input
 const input = (id, type = "text", label = "", placeholder = "") => {
     if (type === "file") {
         // Tambahkan input tipe file untuk memilih gambar dari lokal
@@ -52,6 +53,7 @@ const input = (id, type = "text", label = "", placeholder = "") => {
         `;
     }
 };
+
 
 // Fungsi untuk membuat elemen button
 const button = (id, label) => {
