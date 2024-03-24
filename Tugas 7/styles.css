@@ -1,0 +1,217 @@
+n /* CSS for basic styling */
+header {
+    background-color: #7e8e94;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Tambahkan posisi relatif */
+    z-index: 1; /* Atur z-index untuk memastikan header berada di atas container */
+}
+
+.container {
+    position: fixed; /* Tambahkan posisi fixed */
+    top: 0px; /* Atur jarak antara container dan bagian atas viewport sesuai dengan tinggi header */
+    left: 0; /* Tetapkan container di sebelah kiri */
+    width: 100%; /* Set lebar container menjadi 100% */
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-image: url('image/background1.jpg');  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('image/background.jpg'); /* Ganti 'path_to_your_image.jpg' dengan path gambar Anda */
+    background-size: cover; /* Untuk mengisi seluruh area body dengan gambar */
+    background-repeat: no-repeat; /* Agar gambar tidak diulang */
+    background-position: center; /* Menempatkan gambar ke tengah halaman */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-links a,
+.nav-links button {
+    color: #fff;
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+    background-color: #555;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-image: url('image/background1.jpg');  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 70px;
+}
+
+.content {
+    flex: 1; /* Mengisi ruang tersedia */
+}
+
+.data {
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    width: auto; /* Sesuaikan ukuran container gambar */
+    margin-left: 0; /* Sesuaikan ruang antara data diri dan carousel */
+}
+
+.carousel {
+    position: relative;
+    width: 100%; /* Mengisi lebar carousel */
+    max-width: 300px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.carousel img {
+    display: block;
+    margin: 0 auto; /* Untuk membuat gambar berada di tengah */
+    max-width: 100%; /* Agar gambar tidak melebihi lebar carousel */
+    max-height: 400px; /* Atur tinggi maksimum untuk menghindari gambar yang terlalu lonjong */
+    height: auto;
+    transition: transform 0.5s ease; /* Add transition for smooth sliding effect */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease; /* Transisi untuk efek slide */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.menu-item {
+    display: inline-block; /* Membuat tombol-tombol sejajar */
+    margin-right: 20px; /* Memberikan jarak antar tombol */
+}
+
+.menu-item a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000; /* Warna latar belakang tombol */
+    padding: 10px 15px; /* Ukuran padding tombol */
+    border-radius: 5px; /* Bentuk tepi tombol */
+}
+
+.menu-item.search-icon {
+    cursor: pointer;
+}
+
+.menu-item.search input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.inmenu {
+    display: flex;
+    align-items: center; /* Memposisikan tombol secara vertikal di tengah */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    margin-right: 20px;
+}
+
+.search {
+    margin-right: auto; /* Tombol search akan ditempatkan sejauh mungkin ke kanan */
+}
+
+.menu-item a,
+.menu-item button {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menu-item.search-icon {
+    cursor: pointer;
+}
+
+.menu-item.search input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Memberikan margin kanan hanya pada menu-item kecuali yang terakhir */
+.menu-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.recommendation {
+    padding: 20px; /* Atur padding di dalam recommendation */
+    border-radius: 10px; /* Atur sudut border */
+    background-color: rgba(255, 255, 255, 0.8); /* Atur warna latar belakang */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Atur bayangan */
+    color: black; /* Atur warna teks */
+}
+
+.separator {
+    position: absolute; /* Tambahkan posisi absolut */
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.separator p {
+    display: inline-block; /* Agar tulisan "Rekomendasi" berada di dalam garis */
+    background-color: #ff0000; /* Warna latar belakang garis */
+    color: white; /* Warna teks putih */
+    padding: 0 10px; /* Atur padding untuk memberi ruang di sekitar teks */
+    border-radius: 5px; /* Atur sudut border */
+    float: left; /* Menggeser ke paling kiri */
+}
+
+.separator::after {
+    content: ""; /* Menambahkan elemen kosong setelah konten */
+    display: block; /* Mengubah ke blok elemen */
+    clear: both; /* Membersihkan elemen floating */
+
+}
+
+ 
+

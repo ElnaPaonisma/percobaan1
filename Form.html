@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form.html</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+
+<body>
+    <header>
+        <h1>Formulir Pendaftaran</h1>
+        <nav class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="jsdasar.html">Jsdasar.html</a>
+        </nav>
+    </header>
+    <h1>Formulir Pendaftaran</h1>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Email Aktif" required><br><br>
+        
+        <label for="no_hp">No. HP:</label><br>
+        <input type="tel" id="no_hp" name="no_hp" placeholder="No. HP Aktif" required><br><br>
+        
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="laki_laki" name="jenis_kelamin" value="laki-laki" required>
+        <label for="laki_laki">Laki-laki</label><br>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan" required>
+        <label for="perempuan">Perempuan</label><br><br>
+        
+        <label for="prodi">Prodi:</label><br>
+        <select id="prodi" name="prodi" required>
+            <option value="" disabled selected>Pilih</option>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Elektro">Teknik Elektro</option>
+            <option value="Manajemen">Manajemen</option>
+        </select><br><br>
+        
+        <label>Hobi:</label><br>
+        <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+        <label for="membaca">Membaca</label><br>
+        <input type="checkbox" id="menulis" name="hobi[]" value="Menulis">
+        <label for="menulis">Menulis</label><br>
+        <input type="checkbox" id="menyanyi" name="hobi[]" value="Menyanyi">
+        <label for="menyanyi">Menyanyi</label><br>
+        <input type="checkbox" id="olah_raga" name="hobi[]" value="Olahraga">
+        <label for="olah_raga">Olahraga</label><br><br>
+        
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="foto">Foto Diri:</label><br>
+        <input type="file" id="foto" name="foto" accept="image/*"><br>
+         
+        <input type="submit" value="Daftar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,83 @@
+ /* CSS for basic styling */
+header {
+    background-color: #7e8e94;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-links a,
+.nav-links button {
+    color: #fff;
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+    background-color: #555;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Memastikan arah konten adalah horizontal */
+}
+
+.content {
+    flex: 1; /* Mengisi ruang tersedia */
+}
+
+.data {
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    width: 45%; /* Lebar carousel */
+    max-width: 300px;
+    margin-left: 20px; /* Ruang antara data diri dan carousel */
+}
+
+.carousel {
+    position: relative;
+    width: 100%; /* Mengisi lebar carousel */
+    max-width: 300px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.carousel img {
+    display: block;
+    margin: 0 auto; /* Untuk membuat gambar berada di tengah */
+    max-width: 100%; /* Agar gambar tidak melebihi lebar carousel */
+    max-height: 400px; /* Atur tinggi maksimum untuk menghindari gambar yang terlalu lonjong */
+    height: auto;
+    transition: transform 0.5s ease; /* Add transition for smooth sliding effect */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease; /* Transisi untuk efek slide */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+}
