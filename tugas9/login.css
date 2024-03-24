@@ -1,0 +1,82 @@
+/* Untuk membuat layout menjadi responsif */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Untuk membuat input menjadi responsif */
+input[type="text"],
+input[type="password"],
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Untuk membuat tombol login responsif */
+#loginButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Untuk membuat header menjadi responsif */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu-item {
+    float: left;
+}
+
+.search {
+    float: right;
+}
+
+.search input[type="text"] {
+    width: 120px;
+    padding: 5px;
+}
+
+/* Untuk membuat search icon responsif */
+.search-icon {
+    float: right;
+    cursor: pointer;
+}
+
+/* Untuk mengatur tampilan mobile */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .menu-item {
+        float: none;
+    }
+
+    .search {
+        float: none;
+        margin-top: 10px;
+    }
+
+    .search input[type="text"] {
+        width: 100%;
+    }
+
+    .search-icon {
+        float: none;
+        margin-top: 10px;
+    }
+}
